@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>Amount</title> 
+		    <link rel="stylesheet" href="login.css"/>
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+			
+</head>
+	<body>
+	
+		<section class="main py-5" >
+		
+			<div class="container d-flex justify-content-center align-items-center">
+				<form id="form" class=" p-5 five">
+				     
+				    <input type="text" placeholder="Enter amount" id="amount"  class="mt-4 p-3"><br>
+					
+			        <input type="text" placeholder="tips" id="tips"  class="mt-4 p-3"><br>
+					 
+			        <input type="text" placeholder="tips%amount" id="tipsamount"  class="mt-4 p-3"><br>
+					
+					<input type="text" placeholder="total amount" id="total"class="p-3 mt-4"><br>
+			       <button  class="btn btn-light mt-5">click</button>
+					<div id="result"></div>
+				</form>
+			</div>
+		
+		</section>
+		<script>
+		let form=document.querySelector("form");
+			form.addEventListener('submit',function(e){
+				e.preventDefault();
+		
+		let amount=parseInt(document.getElementById('amount').value);
+		let tips=parseInt(document.getElementById('tips').value);
+		let tipsamount=document.getElementById('tipsamount');
+		let totalamount=document.getElementById('total');
+		let result=document.getElementById('result');
+		
+			if((amount==='') || (amount<0) || (isNaN(amount))){
+				result.innerHTML="please enter amount";
+					result.style.color="#fff"
+				}
+			else if ((tips==='') || (tips<0) || (isNaN(tips))){
+				result.innerHTML="please enter tips";
+					
+				}
+				else  { 
+				let total=amount*(tips/100);
+				let totals=amount+total;
+				tipsamount.value=`${total}`;
+				totalamount.value=`${totals}`;
+				
+				
+				}
+		});
+		
+		</script>
+        <script>
+     
+        </script>
+		
+	</body>
+</html>

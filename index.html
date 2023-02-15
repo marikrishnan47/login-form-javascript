@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+			<meta charset="UTF-8">
+			<meta http-equiv="X-UA-Compatible" content="IE=edge">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<title>login</title> 
+		    <link rel="stylesheet" href="login.css"/>
+			<link rel="stylesheet" href="css/bootstrap.min.css">
+			<script src="https://code.iconify.design/iconify-icon/1.0.5/iconify-icon.min.js"></script>
+			
+</head>
+	<body>
+		<section class="main  pt-5 over" id="nameField">
+		   
+			<div class="container">
+
+					
+				<div class="row rows ">
+				
+								
+					<div class="sign-in-form col-lg-6  col-sm-12" >
+						
+						
+					</div>
+					
+					<div class="sign-in-form-1 col-lg-6 p-5   col-sm-12">
+				
+						<div class="header-sec mb-5" >
+							  <h1 id="title" >Sign in</h1>
+							  <p>or <a href="next.html">login to your account</a></p>
+							  
+						</div>
+						<div class=" ">
+					
+						  <input type="text" class="form-control  p-4 " id="exampleFormControlInput1" placeholder="Name..">
+						</div>
+						<div class=" ">
+						 
+						  <input type="email" class="form-control  p-4" id="exampleFormControlInput1" placeholder="Email...">
+						</div>
+						<div class="">
+						  
+						  <input type="number" class="form-control  p-4" id="exampleFormControlInput1" placeholder="Number">
+						</div>
+						<div class="">
+						  
+						  <input type="text" class="form-control  p-4" id="exampleFormControlInput1" placeholder="Username..">
+						</div>
+				
+						<div class="">
+						  
+						  <input type="password" class="form-control  p-4" id="newPassword" placeholder="Password">
+						</div>
+						<div class=" activ">
+						  
+						  <input type="password" class="form-control  p-4"  id="confirmPassword" placeholder="Confirmpassword" onkeyup="confirmPassword()">
+						  
+						</div>
+						<span id="errorMsg" class="" style="color: rgb(231, 178, 33);"></span>
+						<h6 class=" pt-5">Have a referral code?</h6>
+					
+						<div class="d-flex align-items-center mt-5  " width="100%" >
+							<button type="button" class="btn btn-danger px-5 but-ty   py-4" id="final" width="100%"><a href="final.html"><a href="final.html">CONTINUE </a></button>
+							
+						</div>
+						<p>By creating an account, I accept the Terms & Conditions & Privacy Policy</p>
+						
+					</div>
+				
+				</div>
+				
+				
+			</div>
+		</section>
+	
+			<script>
+              
+
+			  function confirmPassword() {
+				let password=document.getElementById('newPassword')
+				let confirmpassword=document.getElementById('confirmPassword');
+				let errorMsd = document.getElementById('errorMsg')
+				if(password.value == confirmpassword.value){
+					errorMsd.innerHTML="password-correct";
+				}
+				else{
+					errorMsd.innerHTML="password-Wrong";
+				}
+			  }
+
+             
+
+			</Script>
+
+	</body>
+</html>

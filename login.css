@@ -1,0 +1,125 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+     
+}
+.login-in-form-1{
+    width:100%;
+
+	background-image:url(image/screen-1.jpg);
+	background-position:cover;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.login{
+
+}
+.sign-in-form{
+    width:100%;
+	
+	background-image:url(image/photo-1540189549336-e6e99c3679fe.jpg);
+	background-position:cover;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.form-control:focus {
+    color:none;
+    background-color: #fff;
+    border-color:none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+ .rows{
+	overflow: hidden;
+	 box-shadow: rgba(0, 0, 0, 0.45) 0px 36px 35px -30px !important;
+ }
+.sign-in-form-1 h1{
+	
+	font-size:30px;
+}
+.high{
+	border-bottom: 1px solid #ced4da !important;
+}
+ .activ{
+	border-bottom: 1px solid #ced4da !important;
+}
+p a{
+	text-decoration: none;
+	color: #fc8019;
+}
+p a:hover{
+	color:#fc8010 ;
+	transition: all 0.5s;
+}
+button a:hover{
+	color:#241d1794 ;
+	transition: all 0.5s;
+}
+button a{
+	text-decoration: none;
+	color: #ffffff;
+}
+.form-control{
+	width:100%!important;
+	border:none !important;
+	border: 1px solid #ced4da !important;
+	border-bottom: none !important;
+	border-radius: 0px  !important;
+	padding:0 !important;
+}
+.but-ty{
+	background-color:#fc8019 !important;
+	border:none !important;
+	width:100%;
+}
+.over{
+	overflow:hidden;
+	transition:max-height 0.5s;
+}
+.btn:focus {
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.over{
+	overflow:hidden;
+	transition:max-height 0.5s;
+}
+
+.header-sec{
+	
+}
+.header-sec {
+	font-weight:500;
+}
+.header-sec p span{
+	color:#fc8019;
+}
+.header-sec p{
+	color:#000;
+	position:relative;
+	padding:0px 0px;
+}
+.header-sec p::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 40px;
+    height: 3px;
+    background-color: #000;
+    transform: translateX(-0%);
+}	
+.five input{
+  background-color: none !important;
+}
+.five{
+	box-shadow: rgba(0, 0, 0, 0.45) 0px 36px 35px -30px;
+
+	background-image:url(image/download.jpg);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:cover;
+}
+.main{}
